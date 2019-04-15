@@ -33,7 +33,7 @@ public class RNFirebaseMessagingService extends FirebaseMessagingService {
 
 
   private void sendBroadCast(String message){
-    Intent bIntent = new Intent("Notifreceived");
+    Intent bIntent = new Intent("com.yakazi.serviceprovider");
     bIntent.putExtra("Message", message);
     //bIntent.putExtra(Tags.KEY_ACTION, notifType);
     sendBroadcast(bIntent);
